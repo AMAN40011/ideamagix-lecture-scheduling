@@ -121,5 +121,171 @@ Password: Instructor@123
 Instructor - Amit
 Email: amit@ideamagix.com
 Password: Instructor@123
+
+
+## ⚙️ Project Setup
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/AMAN40011/ideamagix-lecture-scheduling.git
+cd ideamagix-lecture-scheduling
+
+
+2. Backend Setup
+cd Server
+npm install
+
+Create a .env file inside the Server folder:
+
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret
+CLIENT_URL=http://localhost:5173
+PORT=3000
+NODE_ENV=development
+
+Start the backend server:
+
+npm start
+
+The backend will run on:
+
+http://localhost:3000
+3. Frontend Setup
+
+Open a new terminal:
+
+cd Client
+npm install
+
+Create a .env file inside the Client folder:
+
+VITE_API_URL=http://localhost:3000/api
+
+Start the frontend:
+
+npm run dev
+
+The frontend will run on:
+
+http://localhost:5173
+
+
+📦 Dependencies
+Frontend
+React
+Vite
+React Router
+Axios
+Tailwind CSS
+Backend
+Node.js
+Express.js
+MongoDB
+Mongoose
+JWT
+bcrypt
+CORS
+Cookie Parser
+
+
+🛣️ Frontend Routes
+/login
+/admin
+/admin/add-course
+/admin/schedule-lecture
+/instructor
+
+
+🔗 Backend API Routes
+Authentication
+POST /api/auth/login
+POST /api/auth/logout
+GET  /api/auth/me
+Courses
+GET  /api/courses
+POST /api/courses
+Instructors
+GET /api/users/instructors
+Lectures
+GET  /api/lectures
+POST /api/lectures
+GET  /api/lectures/my
+
+## 🧪 Testing
+
+The following functionality has been tested successfully:
+
+### Authentication
+
+- Admin login works correctly
+- Instructor login works correctly
+- Invalid credentials are rejected
+- Logout works correctly
+- Protected routes require authentication
+
+### Admin
+
+- Admin can view all instructors
+- Admin can create courses
+- Admin can schedule lectures
+- Admin can assign instructors to lectures
+- Admin can view all scheduled lectures
+- Admin cannot create duplicate lectures for the same instructor and date
+
+### Instructor
+
+- Instructor can view assigned lectures
+- Instructor can only access their own assigned lectures
+- Instructor can see course names and lecture dates
+
+### Lecture Scheduling Conflict
+
+The backend prevents an instructor from being assigned more than one lecture on the same date.
+
+Example:
+
+```text
+Rahul → 27 Sep 2026 → React Lecture 
+Rahul → 27 Sep 2026 → Node.js Lecture 
+
+Priya → 27 Sep 2026 → Node.js Lecture
+
+
+🗄️ Database
+
+The project uses MongoDB Atlas as the database.
+
+Collections
+users
+courses
+lectures
+Database Dump
+
+A MongoDB database dump is included in the provided Google Drive folder.
+
+The dump contains the project data used for testing, including:
+
+users
+courses
+lectures
+
+The database dump can be restored using MongoDB Database Tools.
+
+Example:
+
+mongorestore --uri="YOUR_MONGODB_CONNECTION_STRING" ideamagix-database-dump/test
+
+
+🔒 Security
+Passwords are hashed using bcrypt
+Authentication is handled using JWT
+JWT is stored in an HTTP-only cookie
+Protected API routes require authentication
+Role-based authorization is implemented for Admin and Instructor
+Admin-only operations are protected by role middleware
+CORS is configured for the deployed frontend
+Environment variables are used for sensitive configuration
+.env files are excluded from Git using .gitignore
 Rahul → 27 Sep 2026 ❌
 Priya → 27 Sep 2026 ✅
