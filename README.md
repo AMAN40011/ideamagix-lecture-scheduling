@@ -44,5 +44,82 @@ For example:
 
 ```text
 Rahul → 27 Sep 2026 ✅
+
+
+## 🛠️ Tech Stack
+
+### Frontend
+
+- React.js
+- Vite
+- JavaScript
+- React Router
+- Axios
+- Tailwind CSS
+
+### Backend
+
+- Node.js
+- Express.js
+- MongoDB
+- Mongoose
+- JWT
+- bcrypt
+- HTTP-only Cookies
+- CORS
+
+### Deployment
+
+- Vercel
+- Render
+- MongoDB Atlas
+
+---
+
+## 📁 Project Structure
+
+```text
+Ideamagix-Intership project/
+├── Client/
+│   ├── public/
+│   └── src/
+│       ├── components/
+│       ├── pages/
+│       ├── services/
+│       ├── App.jsx
+│       └── main.jsx
+│
+├── Server/
+│   ├── config/
+│   ├── controllers/
+│   ├── middleware/
+│   ├── models/
+│   ├── routes/
+│   ├── seed.js
+│   └── index.js
+│
+├── .gitignore
+└── README.md
+
+
+## 🔐 Demo Credentials
+
+### Admin
+
+```text
+Email: admin@ideamagix.com
+Password: Admin@123
+
+
+
+Instructor - Rahul
+Email: rahul@ideamagix.com
+Password: Instructor@123
+Instructor - Priya
+Email: priya@ideamagix.com
+Password: Instructor@123
+Instructor - Amit
+Email: amit@ideamagix.com
+Password: Instructor@123
 Rahul → 27 Sep 2026 ❌
 Priya → 27 Sep 2026 ✅
