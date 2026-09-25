@@ -14,13 +14,13 @@ A key feature of the system is **lecture scheduling conflict prevention**, ensur
 https://github.com/AMAN40011/ideamagix-lecture-scheduling
 
 ### Live Application
-`[ADD LIVE FRONTEND URL AFTER DEPLOYMENT]`
+https://ideamagix-lecture-scheduling.vercel.app
 
 ### Backend API
-`[ADD LIVE BACKEND URL AFTER DEPLOYMENT]`
+https://ideamagix-lecture-scheduling.onrender.com
 
 ### Screen Recording
-`[ADD GOOGLE DRIVE RECORDING LINK]`
+https://drive.google.com/drive/folders/16IPEH8fkslqSfW9mlGiCCD8_9Bdte-SI?usp=sharing
 
 ---
 
