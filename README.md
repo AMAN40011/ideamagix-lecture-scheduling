@@ -1,109 +1,146 @@
-# Ideamagix Online Lecture Scheduling Module
+# Ideamagix - Lecture Scheduling & Course Management System
 
-A full-stack MERN application developed as part of the Ideamagix Review Test Assignment.
+A full-stack web application developed as part of the **Ideamagix Review Test Assignment**.
 
-The application provides an admin panel for managing courses, instructors, lecture batches, and schedules, along with an instructor panel where instructors can view their assigned lectures.
+The application provides an Admin Panel for managing courses, instructors, and lecture schedules, along with an Instructor Panel where instructors can view their assigned lectures.
 
-A key feature of the system is **lecture scheduling conflict prevention**, ensuring that an instructor cannot be assigned more than one lecture on the same date.
+A major focus of the system is **lecture scheduling conflict prevention**. The backend ensures that an instructor cannot be assigned more than one lecture on the same date.
 
 ---
 
-## 🔗 Project Links
+## 🚀 Live Project
 
-### GitHub Repository
-https://github.com/AMAN40011/ideamagix-lecture-scheduling
-
-### Live Application
+### Frontend
 https://ideamagix-lecture-scheduling.vercel.app
 
 ### Backend API
 https://ideamagix-lecture-scheduling.onrender.com
 
-### Screen Recording
+### GitHub Repository
+https://github.com/AMAN40011/ideamagix-lecture-scheduling
+
+### Google Drive - Submission Files
+The Google Drive folder contains:
+
+- Screen Recording
+- Database Dump
+- Project Documentation PDF
+
 https://drive.google.com/drive/folders/16IPEH8fkslqSfW9mlGiCCD8_9Bdte-SI?usp=sharing
 
 ---
 
 # 📌 Project Overview
 
-The Ideamagix Online Lecture Scheduling Module is designed to manage courses, instructors, batches, and lecture schedules.
-
-The system contains two user roles:
-
-- **Admin**
-- **Instructor**
+The Ideamagix Lecture Scheduling System is designed to manage courses, instructors, and lecture schedules through separate Admin and Instructor panels.
 
 ### Admin can:
 
 - Login securely
+- View dashboard statistics
 - View all instructors
 - Add courses
-- Add multiple lecture batches for courses
-- Assign instructors to lectures
-- Assign lecture dates
+- Add course details
+- Add multiple lectures/batches to a course
+- Assign lectures to instructors
+- Select lecture dates
 - View all scheduled lectures
-- Prevent instructor scheduling conflicts
+- Prevent duplicate lecture scheduling for the same instructor and date
 
 ### Instructor can:
 
 - Login securely
-- Access the instructor dashboard
-- View lectures assigned to them
+- Access their instructor dashboard
+- View assigned lectures
 - View course names
-- View batch names
-- View scheduled lecture dates
+- View lecture dates
+- View only lectures assigned to their account
 
 ---
 
-# ✨ Features
+# 🎯 Assignment Requirements Covered
 
-## 🔐 Authentication & Authorization
+The project implements the major requirements of the assignment:
 
-- JWT-based authentication
-- HTTP-only authentication cookies
-- Secure password hashing using bcrypt
-- Role-based authorization
-- Protected frontend routes
-- Protected backend APIs
-- Separate Admin and Instructor access
-
----
-
-## 👨‍💼 Admin Panel
-
-The Admin Dashboard provides a centralized interface for managing the lecture scheduling system.
-
-### Admin Features
-
-- Dashboard overview
-- View total courses
-- View total instructors
-- View scheduled lectures
-- View all instructors
-- View all scheduled lectures
-- Add new courses
-- Schedule lectures
-- Assign instructors
-- Assign batches
-- Assign lecture dates
+| Requirement | Status |
+|---|---|
+| Admin Panel | ✅ Completed |
+| Course Management | ✅ Completed |
+| Add Course Name | ✅ Completed |
+| Add Course Level | ✅ Completed |
+| Add Course Description | ✅ Completed |
+| Add Course Image | ✅ Completed |
+| Multiple lectures/batches per course | ✅ Completed |
+| Instructor Management | ✅ Completed |
+| Assign instructor to lecture | ✅ Completed |
+| Assign lecture date | ✅ Completed |
+| Prevent instructor/date conflicts | ✅ Completed |
+| Instructor Panel | ✅ Completed |
+| Instructor-specific lecture list | ✅ Completed |
+| Authentication | ✅ Completed |
+| Protected routes | ✅ Completed |
+| Backend validation | ✅ Completed |
+| Database integration | ✅ Completed |
+| Production deployment | ✅ Completed |
 
 ---
 
-## 📚 Course Management
+# 🛠️ Technology Stack
 
-Admin can create courses with:
+## Frontend
 
-- Course Name
-- Course Level
-- Course Description
-- Course Image
+- React.js
+- Vite
+- React Router
+- Axios
+- Tailwind CSS
+- JavaScript (ES6+)
 
-A course can have multiple lecture batches.
+## Backend
 
-Example:
+- Node.js
+- Express.js
+- MongoDB
+- Mongoose
+- JWT Authentication
+- bcrypt
+- HTTP-only Cookies
+- CORS
+
+## Deployment
+
+- Vercel - Frontend
+- Render - Backend
+- MongoDB Atlas - Database
+
+---
+
+# 📂 Project Structure
 
 ```text
-MERN Stack Development
-    ├── Morning Batch
-    ├── Evening Batch
-    └── Weekend Batch
+Ideamagix-Intership project/
+│
+├── Client/
+│   ├── public/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── services/
+│   │   ├── App.jsx
+│   │   └── main.jsx
+│   │
+│   ├── package.json
+│   └── vite.config.js
+│
+├── Server/
+│   ├── config/
+│   ├── controllers/
+│   ├── middleware/
+│   ├── models/
+│   ├── routes/
+│   ├── seed.js
+│   ├── index.js
+│   └── package.json
+│
+├── .gitignore
+└── README.md
